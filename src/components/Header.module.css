@@ -232,7 +232,7 @@
     top: 100%;
     left: 0;
     width: 100%;
-    height: 17px; /* Adjust this height to the size of your gap */
+    height: 20px; /* Adjust this height to the size of your gap */
     background-color: transparent;
 }
 
@@ -243,7 +243,7 @@
 .otherCountriesContainer {
     display: none;
     position: absolute;
-    top: 61px;
+    top: 59px;
     left: 0;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);

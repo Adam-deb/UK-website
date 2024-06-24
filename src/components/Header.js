@@ -93,7 +93,7 @@ export default function Header() {
       <div className={styles.logoNavContainer}>
         <div className={styles.logoContainer}>
           <Link href="/">
-            <Image height="200" width="600" className={styles.logoImage} src="/logo.png" alt="Decimal Factor Logo" />
+            <Image height="30" width="150" className={styles.logoImage} src="/logo.png" alt="Decimal Factor Logo" />
           </Link>
         </div>
         <nav ref={navRef} className={`${styles.navbar} ${menuOpen ? styles.navOpen : ''}`}>
@@ -126,7 +126,7 @@ export default function Header() {
         ref={countrySelectorRef}
       >
         <div className={styles.defaultCountry}>
-          <Image height="50" width="50" className={styles.countryFlag} src="/uk-flag.png" alt="UK Flag" />
+          <Image height="20" width="20" className={styles.countryFlag} src="/uk-flag.png" alt="UK Flag" />
           UK
         </div>
         {countryMenuOpen && (
@@ -134,25 +134,25 @@ export default function Header() {
             <ul>
               <li>
                 <a href="https://www.decimalfactor.com/" aria-label="US">
-                  <Image height="50" width="50" className={styles.countryFlag} src="/us-flag.png" alt="US Flag" />
+                  <Image height="20" width="20" className={styles.countryFlag} src="/us-flag.png" alt="US Flag" />
                   US
                 </a>
               </li>
               <li>
                 <a href="https://canada.decimalfactor.com/" aria-label="Canada">
-                  <Image height="50" width="50" className={styles.countryFlag} src="/canada-flag.png" alt="Canada Flag" />
+                  <Image height="20" width="20" className={styles.countryFlag} src="/canada-flag.png" alt="Canada Flag" />
                   CA
                 </a>
               </li>
               <li>
                 <a href="https://www.decimalfactor.ae/" aria-label="UAE">
-                  <Image height="50" width="50" className={styles.countryFlag} src="/UAE-flag.png" alt="UAE Flag" />
+                  <Image height="20" width="20" className={styles.countryFlag} src="/UAE-flag.png" alt="UAE Flag" />
                   UAE
                 </a>
               </li>
               <li>
                 <a href="https://corporate.decimalfactor.com/" aria-label="Corporate">
-                  <Image height="50" width="50" className={styles.countryFlag} src="/international-logo.png" alt="Corporate Logo" />
+                  <Image height="20" width="20" className={styles.countryFlag} src="/international-logo.png" alt="Corporate Logo" />
                   Corp
                 </a>
               </li>
