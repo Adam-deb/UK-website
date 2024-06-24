@@ -112,19 +112,19 @@ export default function Home() {
             <h3>Unsecured Business Loans</h3>
             <h4>£5,000 - £500,000</h4>
             <p>Gain swift access to funds without the need for collateral. Our unsecured business loans offer funding from £5K to £500K, with flexible repayment terms tailored to your business needs.</p>
-            <a href="./pages/financial-products.html">Learn more</a>
+            <Link href="/financial-products#unsecured-business-loan">Learn more</Link>
           </div>
           <div className={styles.fpCard}>
             <h3>Merchant Cash Advances</h3>
             <h4>£10,000 - £100,000</h4>
             <p>Flexi-funding or merchant cash advance (MCA) is ideal for small businesses experiencing fluctuating sales volumes. Receive upfront funding in exchange for a percentage of your future credit card sales.</p>
-            <a href="./pages/financial-products.html#merchant-cash-advance">Learn more</a>
+            <Link href="/financial-products#merchant-cash-advance">Learn more</Link>
           </div>
           <div className={styles.fpCard}>
             <h3>Invoice Financing</h3>
             <h4>£10,000 - £500,000</h4>
             <p>Improve your cash flow by leveraging your outstanding invoices. With invoice financing, you can immediate access up to 90% of the value of your unpaid invoices.</p>
-            <a href="./pages/financial-products.html#invoice-financing">Learn more</a>
+            <Link href="./financial-products#invoice-financing">Learn more</Link>
           </div>
         </div>
       </section>
