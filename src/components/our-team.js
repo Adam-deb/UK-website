@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import { useState } from "react";
 import styles from "./our-team.module.css";
 
@@ -58,7 +59,7 @@ export default function OurTeam() {
       <div className={styles.team}>
         {teamMembers.map((member, index) => (
           <div key={index} className={styles.teamMember} onClick={() => handleCardClick(member)}>
-            <img src={member.image} alt={member.name} />
+            <Image height="50" width="50" src={member.image} alt={member.name} />
             <h3>{member.name}</h3>
             <p>{member.position}</p>
             <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
@@ -72,7 +73,7 @@ export default function OurTeam() {
         <div className={`${styles.modal} ${selectedMember ? styles.show : ''}`}>
           <div className={styles.modalContent}>
             <span className={styles.closeButton} onClick={closeModal}>&times;</span>
-            <img src={selectedMember.image} alt={selectedMember.name} />
+            <Image height="50" width="50" src={selectedMember.image} alt={selectedMember.name} />
             <h3>{selectedMember.name}</h3>
             <p>{selectedMember.position}</p>
             <p>{selectedMember.description}</p>

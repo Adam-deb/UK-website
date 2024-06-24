@@ -64,7 +64,7 @@ export default function Home() {
         <div className={styles.heroContent}>
           <div className={styles.heroTextContent}> 
             <h1>Fast and Flexible Funding for Small Businesses</h1>
-            <p className={styles.appStepsHeadingp}>Whether you're investing in new Business opportunities, or optimizing cash flow, our specialized financial solutions are designed to accelerate your business forward.</p>
+            <p className={styles.appStepsHeadingp}>Whether you&apos;re investing in new Business opportunities, or optimizing cash flow, our specialized financial solutions are designed to accelerate your business forward.</p>
             <a href="https://portal.decimalfactor.com/request-a-quote"><button>Apply Now</button></a>
           </div>
           <div className={styles.heroImage}>
@@ -104,7 +104,7 @@ export default function Home() {
         <div className={styles.financialProductsHeading}>
           <h2>Discover financial solutions for all your business needs</h2>
           <div className={styles.fpSubheading}>
-            <p>At Decimal Factor, we arrange a variety of financial solutions designed to meet the unique needs of small and medium-sized businesses. Whether you're looking to expand, manage cash flow, or cover operational costs, we'll arrange the right product for you.</p>
+            <p>At Decimal Factor, we arrange a variety of financial solutions designed to meet the unique needs of small and medium-sized businesses. Whether you&apos;re looking to expand, manage cash flow, or cover operational costs, we&apos;ll arrange the right product for you.</p>
           </div>
         </div>
         <div className={styles.fpContentContainer}>
@@ -133,10 +133,10 @@ export default function Home() {
       </section>
       <section className={styles.deniedCta}>
         <div className={styles.deniedCtaContent}>
-          <h2>Have You Been Denied a Small Business Loan in the Past? Don't Let That Stop You!</h2>
+          <h2>Have You Been Denied a Small Business Loan in the Past? Don&apos;t Let That Stop You!</h2>
           <p>At Decimal Factor, we provide alternative financing options for UK small businesses that have faced rejection.</p>
           <p>Our team of experienced funding professionals specialise in working with small business owners who have been previously denied loans. We understand your unique situation, assess your current financial health, and develop a personalized funding solution that fits your needs.</p>
-          <p>Our initial soft credit checks ensure your credit score stays intact, so there's no risk in discovering how we can support your business.</p>
+          <p>Our initial soft credit checks ensure your credit score stays intact, so there&apos;s no risk in discovering how we can support your business.</p>
           <a><button>Apply Now!</button></a>
         </div>
       </section>

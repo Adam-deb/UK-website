@@ -1,5 +1,6 @@
 "use client"
 
+import Image from 'next/image';
 import React, { useState, useEffect } from "react";
 import styles from "./Carousel.module.css";
 
@@ -12,7 +13,7 @@ const Carousel = ({ testimonials }) => {
     }, 7000); // Change slide every 7 seconds
 
     return () => clearInterval(interval);
-  }, [currentSlide]);
+  }, [currentSlide, nextSlide]);
 
   const prevSlide = () => {
     setCurrentSlide((currentSlide - 1 + testimonials.length) % testimonials.length);
@@ -33,7 +34,7 @@ const Carousel = ({ testimonials }) => {
                 index === currentSlide ? styles.active : ""
               }`}
             >
-              <img src={testimonial.image} alt={`Testimonial ${index + 1}`} />
+              <Image height="400" width="400" src={testimonial.image} alt={`Testimonial ${index + 1}`} />
               <div className={styles.testimonialContent}>
                 <p>"{testimonial.text}"</p>
                 <h4>{testimonial.author}</h4>

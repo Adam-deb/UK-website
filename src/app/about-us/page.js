@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Header from "../../components/Header"
 import OurTeam from "../../components/our-team"
 import Breadcrumb from "../../components/Breadcrumb";
@@ -32,7 +33,7 @@ export default function AboutUs() {
       <section className={styles.section}>
         <h2>Our Journey</h2>
         <div className={styles.journeyContent}>
-          <img src="./manoj.jpg" alt="Founder Manoj Karkhanis" className={styles.founderImage} />
+          <Image height="300" width="300" src="./manoj.jpg" alt="Founder Manoj Karkhanis" className={styles.founderImage} />
           <div>
             <p>
               Founded in 2008 by serial entrepreneur Manoj Karkhanis, Decimal Factor emerged as a beacon of hope in the wake of the financial crisis. Witnessing firsthand the struggles that businesses faced in securing funding from traditional high street banks, Manoj was driven to create an alternative finance credit brokerage firm that would bridge this gap.
