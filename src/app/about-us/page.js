@@ -43,7 +43,7 @@ export default function AboutUs() {
             </p>
           </div>
         </div>
-      </section>s
+      </section>
 
       {/* Our Commitment Section */}
       <section className={styles.section}>
