@@ -31,12 +31,12 @@ const Carousel = ({ testimonials }) => {
             <div
               key={index}
               className={`${styles.testimonialItem} ${
-                index === currentSlide ? styles.active : ""
+                index === currentSlide ? styles.active : 
               }`}
             >
               <Image height="400" width="400" src={testimonial.image} alt={`Testimonial ${index + 1}`} />
               <div className={styles.testimonialContent}>
-                <p>"{testimonial.text}"</p>
+                <p>&quot;{testimonial.text}&quot;</p>
                 <h4>{testimonial.author}</h4>
               </div>
             </div>
