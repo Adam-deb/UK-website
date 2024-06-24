@@ -1,0 +1,24 @@
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 15px 0;
+    background-color: #C3181E;
+    margin-top: 15px;
+  }
+  
+  .breadcrumbItem {
+    color: white;
+    margin: 0 5px;
+  }
+  
+  .breadcrumbSeparator {
+    margin: 0 5px;
+    color: white
+  }
+  
+  .breadcrumbItem:hover {
+    text-decoration: underline;
+  }
+  

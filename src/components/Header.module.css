@@ -1,0 +1,437 @@
+.header {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 78px;
+}
+
+.logoNavContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logoContainer {
+    margin-right: 20px;
+}
+
+.logoContainer a {
+    display: flex;
+    align-items: center;
+}
+
+.logoImage {
+    max-width: 150px;
+    margin-right: 35px;
+}
+
+.menuToggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    display: none;
+}
+
+.hamburger {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    transition: all 0.3s;
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    bottom: -8px;
+}
+
+.open .hamburger {
+    transform: rotate(45deg);
+}
+
+.open .hamburger::before {
+    transform: rotate(90deg) translateX(8px);
+}
+
+.open .hamburger::after {
+    opacity: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar > ul > li {
+    position: relative;
+    margin-right: 20px;
+    padding: 15px 0;
+    user-select: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s;
+}
+
+.arrowIcon {
+    margin-left: 10px;
+    width: 10px;
+    height: 10px;
+    transition: transform 0.3s;
+}
+
+.navbar ul li.active .navItemTitleContainer {
+    text-decoration: underline 2px #C3181E;
+    text-underline-offset: 5px;
+}
+
+.navbar ul li:hover .navItemTitleContainer {
+    text-decoration: underline 2px #C3181E;
+    text-underline-offset: 5px;
+}
+
+.navbar ul li ul {
+    display: none;
+    position: absolute;
+    top: 63px;
+    left: 0;
+    background-color: white;
+    list-style-type: none;
+    padding: 0;
+    width: 200px;
+    margin-top: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul li::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 15px; /* Adjust this height to the size of your gap */
+    background-color: transparent;
+}
+
+.navbar ul li:hover ul,
+.navbar ul li.active ul {
+    display: block;
+}
+
+.navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid #ddd;
+}
+
+.navbar ul li ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: black;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+.headerButtonsContainer {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.loginButton {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'MontserratRegular';
+}
+
+.loginButton:hover {
+    text-decoration: underline 2px #C3181E;
+    text-underline-offset: 5px;
+}
+
+.applyButton {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #C3181E;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'MontserratRegular';
+}
+
+.applyButton:focus {
+    outline: 2px solid white;
+}
+
+.countrySelectorContainer {
+    position: relative;
+    margin-left: 20px;
+    cursor: default;
+}
+
+.defaultCountry {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.defaultCountry::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 17px; /* Adjust this height to the size of your gap */
+    background-color: transparent;
+}
+
+.countryFlag {
+    margin-right: 8px;
+}
+
+.otherCountriesContainer {
+    display: none;
+    position: absolute;
+    top: 61px;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-right: 15px;
+    z-index: 1000;
+}
+
+.countrySelectorContainer:hover .otherCountriesContainer,
+.countrySelectorContainer:focus-within .otherCountriesContainer {
+    display: block;
+}
+
+.otherCountriesContainer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.otherCountriesContainer li {
+    padding: 5px;
+    white-space: nowrap;
+}
+
+.otherCountriesContainer li a {
+    color: black;
+    text-decoration: none;
+}
+
+.otherCountriesContainer li:hover {
+    background-color: #f9f9f9;
+}
+
+.countrySelectorContainer ul li a {
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+}
+
+
+/* Mobile Styles */
+@media (max-width: 970px) {
+    .logoNavContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .menuToggle {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .hamburger {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        position: relative;
+        transition: all 0.3s;
+    }
+
+    .hamburger::before,
+    .hamburger::after {
+        content: '';
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        position: absolute;
+        transition: all 0.3s;
+    }
+
+    .hamburger::before {
+        top: -8px;
+    }
+
+    .hamburger::after {
+        bottom: -8px;
+    }
+
+    .open .hamburger {
+        transform: rotate(45deg);
+    }
+
+    .open .hamburger::before {
+        transform: rotate(90deg) translateX(8px);
+    }
+
+    .open .hamburger::after {
+        opacity: 0;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 78px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        align-items: flex-start;
+        max-height: calc(100vh - 60px);
+        overflow-y: auto;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar.navOpen {
+        transform: translateX(0);
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar > ul > li {
+        margin-right: 0;
+        width: 100%;
+        padding: 15px 0;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .navbar ul li.active .navItemTitleContainer {
+        text-decoration: none;
+    }
+
+    .navbar ul li:hover .navItemTitleContainer {
+        text-decoration: none;
+    }
+
+    .navbar ul li a {
+        justify-content: space-between;
+        padding: 15px 20px;
+        width: 100%;
+    }
+
+    .arrowIcon {
+        display: inline-block;
+        margin-left: 10px;
+        width: 10px;
+        height: 10px;
+        transition: transform 0.3s;
+    }
+
+    .navbar ul li ul {
+        position: static;
+        width: auto;
+        margin-top: 15px;
+        box-shadow: none;
+        border-top: none;
+        padding-left: 20px; 
+    }
+
+    .navbar ul li ul li {
+        border-top: none;
+    }
+
+    .headerButtonsContainer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right:30px
+    }
+
+    .countrySelectorContainer {
+        display: none;
+    }
+
+    .logoContainer {
+        flex: 1;
+    }
+
+    .logoNavContainer {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .headerButtonsContainer{
+        display:none
+    }
+}

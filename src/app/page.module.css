@@ -1,0 +1,245 @@
+/* Hero Section */
+.hero {
+  /* background: url(../images/hero-background.png) no-repeat top center; */
+  width: 100%;
+  background-size: cover;
+  padding: 95px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 100px;
+}
+
+.heroTextContent {
+  flex: 1;
+  margin-right: 20px;
+  /* color: white; */
+}
+
+.heroTextContent h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-family: 'MontserratSemiBold'
+}
+
+.heroTextContent p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-family: 'MontserratMedium'
+}
+
+.heroTextContent button {
+  background-color: #C3181E;
+  border-radius: 10px;
+  color: white !important;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.heroTextContent button:hover {
+  background-color: #c3181eb8;
+}
+
+.heroImage {
+  flex: 1;
+  text-align: right;
+}
+
+.heroImage img {
+  max-width: 375px;
+  height: auto;
+}
+
+/* Application steps section */
+
+.appStepsHeading {
+  text-align: center;
+  color: white;
+  font-family: 'MontserratSemiBold';
+  font-size: 32px;
+}
+
+.appSteps {
+  background-color: #C3181E;
+  padding: 50px 0;
+}
+
+.appContainer {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 50px auto 0;
+}
+
+.appStep1,
+.appStep2,
+.appStep3 {
+  flex: 0 0 calc(33.333% - 35px);
+  padding: 0 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.appStepContent {
+  color: white;
+}
+
+.appStepContent p {
+  color: white;
+  margin-top: 8px;
+}
+
+.appStep1 {
+  margin-right: 20px;
+}
+
+.appStep2 {
+  margin: 0 10px;
+}
+
+.appStep3 {
+  margin-left: 20px;
+}
+
+.appStep1 svg,
+.appStep2 svg,
+.appStep3 svg {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Financial Products Section */
+.financialProducts {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+}
+
+.financialProductsHeading {
+  font-family: 'MontserratSemiBold';
+  font-size: 32px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.fpSubheading {
+  padding: 0 150px;
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.fpContentContainer {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 150px;
+  max-height: 320px;
+}
+
+.fpCard {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  flex: 1;
+  max-width: 32%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.fpCard h3 {
+  font-family: 'MontserratSemiBold';
+  font-size: 16px;
+  background-color: #C3181E;
+  color: white;
+  border-radius: 20px;
+  padding: 5px;
+  position: relative;
+  top: -31px;
+  text-align: center;
+}
+
+.fpCard h4 {
+  color: #C3181E;
+  text-align: center;
+}
+
+.fpCard p {
+  font-family: 'MontserratRegular';
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 25px !important;
+  text-align: center;
+}
+
+.fpCard a {
+  margin-top: auto;
+  color: #0066cc;
+  text-decoration: underline;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Customer Testimonial section */
+
+.customerTestimonials {
+  margin: 50px 150px 0;
+}
+
+
+/* denied-cta section */
+
+.deniedCta {
+  color: white;
+  background-color: #C3181E;
+  font-family: 'MontserratSemiBold', sans-serif;
+  padding: 50px 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+.deniedCtaContent h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.deniedCtaContent p {
+  color: white;
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.deniedCtaContent a {
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.deniedCtaContent button {
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  padding: 15px 30px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* FAQ section */
+
+.faqSection {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+  font-family: 'Montserrat', sans-serif;
+}

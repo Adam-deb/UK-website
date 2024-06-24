@@ -1,0 +1,173 @@
+/* Breadcrumbs */
+.breadcrumbs {
+    background-color: #f4f4f4;
+    padding: 15px 0;
+    margin-top: 70px; /* Adjust for fixed header */
+  }
+  
+  .breadcrumbs ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .breadcrumbs ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .breadcrumbs ul li::after {
+    content: '/';
+    margin-left: 10px;
+  }
+  
+  .breadcrumbs ul li:last-child::after {
+    content: '';
+  }
+  
+  
+  /* Hero Section */
+  .hero {
+    /* background: url(../images/hero-background.png) no-repeat top center; */
+    width: 100%;
+    background-size: cover;
+    padding: 95px 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .heroContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 100px;
+  }
+  
+  .heroTextContent {
+    flex: 1;
+    margin-right: 20px;
+    /* color: white; */
+  }
+  
+  .heroTextContent h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'MontserratSemiBold'
+  }
+  
+  .heroTextContent p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    /* color: white !important; */
+    font-family: 'MontserratMedium'
+  }
+  
+  .heroTextContent button {
+    background-color: #C3181E;
+    border-radius: 10px;
+    color: white !important;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .heroTextContent button:hover {
+    background-color: #c3181eb8;
+  }
+  
+  .heroImage {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .heroImage img {
+    max-width: 375px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  
+  /* Payment services info */
+  .paymentServicesInformation {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+  }
+  
+  .paymentServicesHeading {
+    font-family: 'MontserratSemiBold';
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .paymentServicesSubheading {
+    padding: 0 150px;
+    margin-top: 25px;
+    font-size: 16px;
+  }
+  
+  .benefits {
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    width: 800px;
+    margin: 50px auto;
+  }
+  
+  .benefits h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .benefits ul {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .benefits ul li {
+    position: relative; /* Ensure the icon is positioned relative to the li */
+    padding-left: 35px; /* Adjust spacing between the icon and text */
+    margin-bottom: 10px;
+  }
+  
+  .benefits ul li::before {
+    content: ""; /* Required for pseudo-elements */
+    position: absolute;
+    left: 0;
+    top: 50%; /* Adjust vertical alignment of the icon */
+    transform: translateY(-50%);
+    width: 24px; /* Adjust the size of the icon */
+    height: 24px; /* Adjust the size of the icon */
+    background-image: url("../../../public/checkmark-icon.png"); /* Path to your checkmark icon */
+    background-size: cover; /* Ensure the icon scales properly */
+  }
+  
+  .benefits ul li strong {
+    margin-right: 5px;
+    font-weight: bold;
+  }
+  
+  .callToAction {
+    text-align: center;
+  }
+  
+  .callToAction button {
+    background-color: #C3181E;
+    border-radius: 10px;
+    color: white !important;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+  }
+  
+  .callToAction button:hover {
+    background-color: #c3181eb8;
+  }
+  

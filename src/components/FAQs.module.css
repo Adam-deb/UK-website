@@ -1,0 +1,56 @@
+.faqSection {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .faqSection h2 {
+    text-align: center;
+    font-family: 'MontserratSemiBold';
+    font-size: 32px;
+    margin-bottom: 50px;
+  }
+  
+  .faqItem {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+  }
+  
+  .faqQuestion {
+    font-size: 1.2em;
+    background-color: white;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    border: 1px solid grey;
+    border-radius: 5px;
+  }
+  
+  .faqQuestion:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .faqAnswer {
+    display: none;
+    padding: 15px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+    border-left: 4px solid #C3181E;
+  }
+  
+  .chevron {
+    transition: transform 0.3s ease;
+    user-select: none;
+  }
+  
+  .rotate {
+    transform: rotate(180deg);
+  }
+  
+  .active {
+    display: block;
+  }

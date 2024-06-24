@@ -1,0 +1,89 @@
+ /* Product Details */
+
+ .page{
+    padding: 0 100px
+ }
+  
+  .container {
+    display: flex;
+  }
+  
+  .productDetails {
+    padding: 50px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .productInfo {
+    flex: 1;
+    margin-right: 20px;
+    max-width: 60%;
+  }
+  
+  .productInfo h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .productInfo h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  .productInfo ul {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .productInfo ul li {
+    position: relative; /* Ensure the icon is positioned relative to the li */
+    padding-left: 35px; /* Adjust spacing between the icon and text */
+    margin-bottom: 10px;
+  }
+  
+  .productInfo ul li::before {
+    content: ""; /* Required for pseudo-elements */
+    position: absolute;
+    left: 0;
+    top: 50%; /* Adjust vertical alignment of the icon */
+    transform: translateY(-50%);
+    width: 24px; /* Adjust the size of the icon */
+    height: 24px; /* Adjust the size of the icon */
+    background-image: url("../../../public/checkmark-icon.png"); /* Path to your checkmark icon */
+    background-size: cover; /* Ensure the icon scales properly */
+  }
+  
+  .productInfo ul li strong {
+    margin-right: 5px;
+    font-weight: bold;
+  }
+  
+  .productInfo button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #C3181E;
+    color: white;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  .productInfoImage {
+    flex: 1;
+    max-width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+  }
+  
+  .productInfoImage img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
