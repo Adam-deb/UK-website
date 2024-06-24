@@ -1,11 +1,19 @@
 "use client"
 
 import Image from 'next/image';
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import styles from "./Carousel.module.css";
 
 const Carousel = ({ testimonials }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
+
+  const nextSlide = useCallback(() => {
+    setCurrentSlide((prevSlide) => (prevSlide + 1) % testimonials.length);
+  }, [testimonials.length]);
+
+  const prevSlide = useCallback(() => {
+    setCurrentSlide((prevSlide) => (prevSlide - 1 + testimonials.length) % testimonials.length);
+  }, [testimonials.length]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -13,15 +21,7 @@ const Carousel = ({ testimonials }) => {
     }, 7000); // Change slide every 7 seconds
 
     return () => clearInterval(interval);
-  }, [currentSlide, nextSlide]);
-
-  const prevSlide = () => {
-    setCurrentSlide((currentSlide - 1 + testimonials.length) % testimonials.length);
-  };
-
-  const nextSlide = () => {
-    setCurrentSlide((currentSlide + 1) % testimonials.length);
-  };
+  }, [nextSlide]);
 
   return (
     <section className={styles.customerTestimonials}>
