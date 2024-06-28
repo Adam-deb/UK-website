@@ -112,12 +112,23 @@
   margin-left: 20px;
 }
 
-.appStep1 svg,
-.appStep2 svg,
-.appStep3 svg {
+.step1Icon,
+.step2Icon,
+.step3Icon {
+  display:flex;
+  justify-content: center;
+}
+
+.appStep1 img,
+.appStep2 img,
+.appStep3 img {
   width: 100px;
   height: auto;
   margin-bottom: 20px;
+}
+
+.stepNumber{
+  margin-right: 10px;
 }
 
 /* Financial Products Section */
@@ -206,6 +217,7 @@
   padding: 50px 150px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-top: 50px;
+  text-align: center;
 }
 
 .deniedCtaContent h2 {

@@ -9,6 +9,7 @@ import styles from "./Header.module.css";
 const navigationData = [
   {
     title: 'Products',
+    href: '/financial-products', // Add href for the main navigation item
     subItems: [
       { title: 'Unsecured business loans', href: '/financial-products#unsecured-business-loan' },
       { title: 'Merchant Cash Advance (Flexi-Funding)', href: '/financial-products#merchant-cash-advance' },
@@ -17,12 +18,14 @@ const navigationData = [
   },
   {
     title: 'Services',
+    href: '/services', // Add href for the main navigation item
     subItems: [
       { title: 'Payment services', href: '/services' }
     ]
   },
   {
     title: 'About Us',
+    href: '/about-us', // Add href for the main navigation item
     subItems: [
       { title: 'Our Story', href: '/about-us' },
       { title: 'Our Team', href: '/about-us#our-team' },
@@ -32,6 +35,7 @@ const navigationData = [
   },
   {
     title: 'Support',
+    href: '/support', // Add href for the main navigation item
     subItems: [
       { title: 'Contact Us', href: '/support/contact-us' },
       { title: 'FAQs', href: '/support/faq' }
@@ -102,6 +106,7 @@ export default function Header() {
               <NavItem
                 key={index}
                 title={navItem.title}
+                href={navItem.href} // Pass href to NavItem
                 activeNavItem={activeNavItem}
                 setActiveNavItem={setActiveNavItem}
                 subItems={navItem.subItems}
@@ -164,7 +169,7 @@ export default function Header() {
   );
 }
 
-function NavItem({ title, activeNavItem, setActiveNavItem, subItems, handleSubItemClick, isMobileView }) {
+function NavItem({ title, href, activeNavItem, setActiveNavItem, subItems, handleSubItemClick, isMobileView }) {
   const handleMouseEnter = () => {
     if (!isMobileView) {
       setActiveNavItem(title.toLowerCase());
@@ -191,7 +196,7 @@ function NavItem({ title, activeNavItem, setActiveNavItem, subItems, handleSubIt
       onClick={handleClick}
     >
       <div className={styles.navItemTitleContainer}>
-        {title}
+        <Link className={styles.mainNavItem} href={href}>{title}</Link>
         <Image height="50" width="50" className={styles.arrowIcon} src="/down-arrow.png" alt="Down Arrow" />
       </div>
       {activeNavItem === title.toLowerCase() && (

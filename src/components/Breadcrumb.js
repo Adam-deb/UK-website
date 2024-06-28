@@ -27,7 +27,7 @@ export default function Breadcrumb() {
                 <a className={styles.breadcrumbItem}>{capitalize(segment)}</a>
               </Link>
             ) : (
-              <span className={styles.breadcrumbItem}><strong>{capitalize(segment)}</strong></span>
+              <span className={styles.breadcrumbItemLast}><strong>{capitalize(segment)}</strong></span>
             )}
           </span>
         );

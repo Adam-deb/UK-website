@@ -10,7 +10,8 @@
   
   .breadcrumbItem {
     color: white;
-    margin: 0 5px;
+    margin-left: 7px;
+    margin-right:5px
   }
   
   .breadcrumbSeparator {
@@ -20,5 +21,9 @@
   
   .breadcrumbItem:hover {
     text-decoration: underline;
+  }
+
+  .breadcrumbItemLast {
+    margin-left: 7px
   }
   

@@ -10,12 +10,15 @@ export default function Products() {
     <>
         <Header/>
         <Breadcrumb/>
-        <main className={styles.page}> 
+        <main className={styles.page}>
+            <section className={styles.headingSection}>
+              <h1>Discover financial solutions for all your business needs</h1>
+            </section>
             <section className={`${styles.productDetails} scroll-margin-top`} id="unsecured-business-loan">
                 <div className={styles.container}>
                     <div className={styles.productInfo}>
-                        <h1>Unsecured Business Loans</h1>
-                        <h2>Gain swift access to funds without the need for collateral.</h2>
+                        <h2>Unsecured Business Loans</h2>
+                        <h3>Gain swift access to funds without the need for collateral.</h3>
                         <ul>
                             <li><strong>Funding Amount:</strong> £5,000 to £500,000</li>
                             <li><strong>Repayment Terms:</strong> Flexible repayment terms tailored to your business&apos;s needs</li>
@@ -33,8 +36,8 @@ export default function Products() {
             <section className={`${styles.productDetails} scroll-margin-top`} id="merchant-cash-advance">
                 <div className={styles.container}>
                     <div className={styles.productInfo}>
-                        <h1>Merchant Cash Advance</h1>
-                        <h2>Ideal for small businesses experiencing fluctuating sales volumes.</h2>
+                        <h2>Merchant Cash Advance</h2>
+                        <h3>Ideal for small businesses experiencing fluctuating sales volumes.</h3>
                         <ul>
                             <li><strong>Funding Amount:</strong> Flexible funding tailored to your business&apos;s cash flow</li>
                             <li><strong>Repayment Method:</strong> Percentage of future credit card sales</li>
@@ -52,8 +55,8 @@ export default function Products() {
             <section className={`${styles.productDetails} scroll-margin-top`} id="invoice-financing">
                 <div className={styles.container}>
                     <div className={styles.productInfo}>
-                        <h1>Invoice Financing</h1>
-                        <h2>Improve your cash flow by leveraging your outstanding invoices.</h2>
+                        <h2>Invoice Financing</h2>
+                        <h3>Improve your cash flow by leveraging your outstanding invoices.</h3>
                         <ul>
                             <li><strong>Funding Amount:</strong> Up to 90% of the value of your outstanding invoices</li>
                             <li><strong>Repayment Terms:</strong> Flexible repayment terms based on your invoice payment cycles</li>

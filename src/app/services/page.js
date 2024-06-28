@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import ContactForm from '../../components/contactForm';
 import Header from "../../components/Header"
 import Breadcrumb from "../../components/Breadcrumb"
 import styles from "./page.module.css"
@@ -15,7 +16,7 @@ export default function Services() {
           <div className={styles.heroTextContent}>
             <h1>Payment Services</h1>
             <p>Searching for the perfect secure payment system solution for your business? Secure your next PDQ machine at the most competitive rates available.</p>
-            <a href="https://portal.decimalfactor.com/request-a-quote">
+            <a href="mailto:info@decimalfactor.com?subject=Application%20for%20Payment%20Services&body=Placeholder%20Message">
               <button className={styles.button}>Apply Now for a Terminal</button>
             </a>
           </div>
@@ -43,8 +44,13 @@ export default function Services() {
           </ul>
         </div>
         <div className={styles.callToAction}>
-          <button className={styles.button}>Apply Now for a Terminal</button>
+          <a href="mailto:info@decimalfactor.com?subject=Application%20for%20Payment%20Services&body=Placeholder%20Message">
+            <button className={styles.button}>Apply Now for a Terminal</button>
+          </a>
         </div>
+      </section>
+      <section>
+        <ContactForm/>
       </section>
     </>
     )

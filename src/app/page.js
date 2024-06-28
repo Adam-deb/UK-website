@@ -79,21 +79,30 @@ export default function Home() {
         </div>
         <div className={styles.appContainer}> 
           <div className={styles.appStep1}>
-            <div className={styles.step1Icon}></div>
+            <div className={styles.step1Icon}>
+              <img className={styles.stepNumber} src='/number-1.png'/>
+              <img src='/step-1-icon.png'/>
+            </div>
             <div className={styles.appStepContent}>
               <h3>Apply online in just 15 minutes</h3>
               <p>Fill out our simple online application form with basic details about your business and financing needs.</p>
             </div>
           </div>
           <div className={styles.appStep2}>
-            <div className={styles.step2Icon}></div>
+            <div className={styles.step2Icon}>
+              <img className={styles.stepNumber} src='/number-2.png'/>
+              <img src='/step-2-icon.png' />
+            </div>
             <div className={styles.appStepContent}>
               <h3>Review and Approval</h3>
               <p>Our team will promptly review your application and provide a decision.</p>
             </div>
           </div>
           <div className={styles.appStep3}>
-            <div className={styles.step3Icon}></div>
+            <div className={styles.step3Icon}>
+              <img className={styles.stepNumber} src='/number-3.png'/>
+              <img src='/step-3-icon.png'/>
+            </div>
             <div className={styles.appStepContent}>
               <h3>Get Funded</h3>
               <p>Upon approval, access funds quickly to support your business growth or cash flow needs.</p>
