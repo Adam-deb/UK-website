@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import ContactForm from '../../components/contactForm';
 import Header from "../../components/Header"
 import Breadcrumb from "../../components/Breadcrumb"
 import styles from "./page.module.css"
@@ -48,9 +47,6 @@ export default function Services() {
             <button className={styles.button}>Apply Now for a Terminal</button>
           </a>
         </div>
-      </section>
-      <section>
-        <ContactForm/>
       </section>
     </>
     )
