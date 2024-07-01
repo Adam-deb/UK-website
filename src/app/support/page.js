@@ -62,7 +62,7 @@ export default function FAQsPage() {
                 </section>
                 <section className={styles.contactSection} id="contact-us">
                     <h2>Contact us</h2>
-                    <p>If you're unable to find an answer to your question, please find our contact information below.</p>
+                    <p>If you&apos;re unable to find an answer to your question, please find our contact information below.</p>
                     <FAQs faqData={contactInfo} />
                 </section>
             </main>
