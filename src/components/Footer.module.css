@@ -1,0 +1,109 @@
+.footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footerContainer {
+    display: flex;
+    justify-content: center; /* Center the entire footer content horizontally */
+    align-items: center; /* Center the entire footer content vertically */
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .footerLogoContainer {
+    flex: 1;
+    display: flex;
+    justify-content:flex-start; /* Center logo horizontally */
+    align-items: center; /* Center logo vertically */
+  }
+  
+  .footerNavContainer {
+    flex: 2; /* Adjust flex value to ensure spacing is even */
+    display: flex;
+    justify-content: center; /* Center nav links horizontally */
+    align-items: center; /* Center nav links vertically */
+    flex-wrap: nowrap; /* Ensure nav items stay in one line */
+  }
+  
+  .footerNavItem {
+    margin: 0 10px; /* Adjust margin for spacing between nav items */
+  }
+  
+  .footerMainNavItem {
+    font-weight: bold;
+    display: block;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .footerMainNavItem:hover {
+    text-decoration: underline;
+  }
+  
+  .footerSocialContainer {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Center icons horizontally */
+    align-items: center; /* Center icons vertically */
+  }
+  
+  .footerSocialContainer a {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .footerBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footerBottomLinks {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footerBottomLinks a {
+    margin-left: 20px;
+    color: #666;
+    text-decoration: none;
+  }
+  
+  .footerBottomLinks a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .footerContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footerNavContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footerNavItem {
+      margin-bottom: 10px; /* Add margin bottom for spacing in column layout */
+    }
+  
+    .footerSocialContainer {
+      justify-content: center;
+    }
+  
+    .footerBottom {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footerBottomLinks {
+      margin-top: 10px;
+    }
+  }
+  

@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Header from "../../../components/Header";
 import Breadcrumb from "../../../components/Breadcrumb";
+import Footer from "@/components/Footer";
 import styles from "./page.module.css";
 
 // Define available vacancies variable
@@ -88,6 +89,7 @@ export default function Careers() {
           </div>
         </div>
       )}
+      <Footer />
     </>
   );
 }

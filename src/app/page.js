@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Header from "../components/Header"
 import Carousel from "../components/Carousel";
 import FAQs from "../components/FAQs";
+import Footer from '@/components/Footer';
 import styles from "./page.module.css";
 
 
@@ -151,9 +152,11 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.faqSection}>
+        <h2>Frequently Asked Qustions</h2>
         <FAQs faqData={faqData} />
       </section>
     </main>
+    <Footer />
   </>
   );
 }

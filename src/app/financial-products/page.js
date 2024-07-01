@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Header from "../../components/Header"
 import Breadcrumb from "../../components/Breadcrumb";
+import Footer from '@/components/Footer';
 import styles from './page.module.css';
 
 
@@ -70,6 +71,7 @@ export default function Products() {
                 </div>
             </section>
         </main>
+        <Footer />
     </>
     );
 }

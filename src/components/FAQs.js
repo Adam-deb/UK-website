@@ -12,7 +12,6 @@ const FAQs = ({ faqData }) => {
 
   return (
     <section className={styles.faqSection}>
-      <h2>Frequently Asked Questions</h2>
       {faqData.map((faq, index) => (
         <div key={index} className={styles.faqItem}>
           <div
@@ -32,9 +31,8 @@ const FAQs = ({ faqData }) => {
             className={`${styles.faqAnswer} ${
               activeIndex === index ? styles.active : ""
             }`}
-          >
-            {faq.answer}
-          </div>
+            dangerouslySetInnerHTML={{ __html: faq.answer }}
+          />
         </div>
       ))}
     </section>

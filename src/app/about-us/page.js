@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Header from "../../components/Header";
 import OurTeam from "../../components/our-team";
 import Breadcrumb from "../../components/Breadcrumb";
+import Footer from '@/components/Footer';
 import styles from "./page.module.css";
 
 export default function AboutUs() {
@@ -55,12 +56,8 @@ export default function AboutUs() {
         <section className="scroll-margin-top" id="our-team">
           <OurTeam />
         </section>
-
-        <section className={styles.ctaSection}>
-          <h2>Ready to Grow Your Business?</h2>
-          <button className={styles.ctaButton}>Apply Now</button>
-        </section>
       </main>
+      <Footer />
     </>
   );
 }

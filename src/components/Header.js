@@ -37,8 +37,8 @@ const navigationData = [
     title: 'Support',
     href: '/support', // Add href for the main navigation item
     subItems: [
-      { title: 'Contact Us', href: '/support/contact-us' },
-      { title: 'FAQs', href: '/support/faq' }
+      { title: 'Contact Us', href: '/support#contact-us' },
+      { title: 'FAQs', href: '/support' }
     ]
   }
 ];
