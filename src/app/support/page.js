@@ -1,6 +1,7 @@
 import Header from "@/components/Header"; 
 import Breadcrumb from "@/components/Breadcrumb"; 
 import FAQs from "@/components/FAQs";
+import Footer from "@/components/Footer";
 import styles from './page.module.css'; 
 
 export default function FAQsPage() {
