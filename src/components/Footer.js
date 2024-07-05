@@ -42,7 +42,6 @@ export default function Footer() {
 
 const footerNavigationData = [
   { title: 'Products', href: '/financial-products' },
-  { title: 'Services', href: '/services' },
   { title: 'About Us', href: '/about-us' },
   { title: 'Support', href: '/support' },
 ];
