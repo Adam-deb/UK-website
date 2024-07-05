@@ -1,96 +1,93 @@
-/* Breadcrumbs */
-.breadcrumbs {
-    background-color: #f4f4f4;
-    padding: 15px 0;
-    margin-top: 70px; /* Adjust for fixed header */
-  }
-  
-  .breadcrumbs ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .breadcrumbs ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  .breadcrumbs ul li::after {
-    content: '/';
-    margin-left: 10px;
-  }
-  
-  .breadcrumbs ul li:last-child::after {
-    content: '';
-  }
-  
-  
-  /* Hero Section */
-  .hero {
-    /* background: url(../images/hero-background.png) no-repeat top center; */
-    width: 100%;
-    background-size: cover;
-    padding: 130px 0 ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .heroContent {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    width: 100%;
-    padding: 0 100px;
-  }
-  
-  .heroTextContent {
-    flex: 1;
-    margin-right: 20px;
-    /* color: white; */
-  }
-  
-  .heroTextContent h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    font-family: 'MontserratSemiBold'
-  }
-  
-  .heroTextContent p {
-    font-size: 14px;
-    margin-bottom: 20px;
-    /* color: white !important; */
-    font-family: 'MontserratMedium'
-  }
-  
-  .heroTextContent button {
-    background-color: #C3181E;
-    border-radius: 10px;
-    color: white !important;
-    border: none;
-    padding: 15px 30px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .heroTextContent button:hover {
-    background-color: #c3181eb8;
-  }
-  
-  .heroImage {
-    flex: 1;
-    text-align: right;
-  }
-  
-  .heroImage img {
-    max-width: 375px;
-    height: auto;
-    border-radius: 10px;
-  }
-  
+.serviceDetails {
+  padding: 70px 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  border-bottom: 1px solid #ccc;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap; /* Prevent wrapping of items */
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Style for the text content */
+.serviceInfo {
+  flex: 1;
+  margin-right: 20px;
+  max-width: 60%;
+}
+
+/* Header styles */
+.serviceInfo h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.serviceInfo h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #353535bb;
+}
+
+/* List styles */
+.serviceInfo ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.serviceInfo ul li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 10px;
+}
+
+.serviceInfo ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-image: url("../../../public/checkmark-icon.png");
+  background-size: cover;
+}
+
+.serviceInfo ul li strong {
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+/* Button styles */
+.serviceInfo button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #C3181E;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Style for the image container */
+.serviceInfoImage {
+  flex: 1;
+  max-width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+}
+
+.serviceInfoImage img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
   
   /* Payment services info */
   .paymentServicesInformation {

@@ -61,7 +61,7 @@ export default function FAQsPage() {
                 <section className={styles.generalFaqs}>
                    <FAQs faqData={generalFaqs} />
                 </section>
-                <section className={styles.contactSection} id="contact-us">
+                <section className={`${styles.contactSection} scroll-margin-top`} id="contact-us">
                     <h2>Contact us</h2>
                     <p>If you&apos;re unable to find an answer to your question, please find our contact information below.</p>
                     <FAQs faqData={contactInfo} />

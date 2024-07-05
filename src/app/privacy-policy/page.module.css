@@ -30,6 +30,7 @@
 
 .termsContainer p {
   margin-bottom: 25px;
+  line-height: 1.6;
 }
 
 .termsContainer ul {
@@ -54,4 +55,5 @@
 
 .termsContainer li {
   margin-bottom: 10px; /* Adjust spacing between list items */
+  line-height: 1.6;
 }

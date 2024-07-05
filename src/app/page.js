@@ -140,6 +140,7 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.customerTestimonials}>
+        <h2>Our Success Stories</h2>
         <Carousel testimonials={testimonials} />
       </section>
       <section className={styles.deniedCta}>
@@ -148,7 +149,7 @@ export default function Home() {
           <p>At Decimal Factor, we provide alternative financing options for UK small businesses that have faced rejection.</p>
           <p>Our team of experienced funding professionals specialise in working with small business owners who have been previously denied loans. We understand your unique situation, assess your current financial health, and develop a personalized funding solution that fits your needs.</p>
           <p>Our initial soft credit checks ensure your credit score stays intact, so there&apos;s no risk in discovering how we can support your business.</p>
-          <a><button>Apply Now!</button></a>
+          <a href="https://portal.decimalfactor.com/request-a-quote"><button>Apply Now!</button></a>
         </div>
       </section>
       <section className={styles.faqSection}>

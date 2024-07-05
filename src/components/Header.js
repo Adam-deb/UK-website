@@ -16,13 +16,13 @@ const navigationData = [
       { title: 'Invoice Financing', href: '/financial-products#invoice-financing' }
     ]
   },
-  {
-    title: 'Services',
-    href: '/services', // Add href for the main navigation item
-    subItems: [
-      { title: 'Payment services', href: '/services' }
-    ]
-  },
+  // {
+  //   title: 'Services',
+  //   href: '/services', // Add href for the main navigation item
+  //   subItems: [
+  //     { title: 'Payment services', href: '/services' }
+  //   ]
+  // },
   {
     title: 'About Us',
     href: '/about-us', // Add href for the main navigation item
@@ -30,7 +30,6 @@ const navigationData = [
       { title: 'Our Story', href: '/about-us' },
       { title: 'Our Team', href: '/about-us#our-team' },
       { title: 'Careers', href: '/about-us/careers' },
-      { title: 'Blogs', href: '/blogs' }
     ]
   },
   {
@@ -117,8 +116,8 @@ export default function Header() {
           </ul>
         </nav>
         <div className={styles.headerButtonsContainer}>
-          <button className={styles.loginButton}>Login</button>
-          <button className={styles.applyButton}>Apply Now</button>
+          <a href="https://portal.decimalfactor.com/login"><button className={styles.loginButton}>Login</button></a>
+          <a href="https://portal.decimalfactor.com/request-a-quote"><button className={styles.applyButton}>Apply Now</button></a>
         </div>
         <button className={styles.menuToggle} aria-label="Toggle navigation" onClick={toggleMenu}>
           <span className={`${styles.hamburger} ${menuOpen ? styles.open : ''}`}></span>
@@ -133,6 +132,7 @@ export default function Header() {
         <div className={styles.defaultCountry}>
           <Image height="20" width="20" className={styles.countryFlag} src="/uk-flag.png" alt="UK Flag" />
           UK
+          <Image height="50" width="50" className={styles.arrowIcon} src="/down-arrow.png" alt="Down Arrow" />
         </div>
         {countryMenuOpen && (
           <div className={styles.otherCountriesContainer}>
@@ -153,12 +153,6 @@ export default function Header() {
                 <a href="https://www.decimalfactor.ae/" aria-label="UAE">
                   <Image height="20" width="20" className={styles.countryFlag} src="/UAE-flag.png" alt="UAE Flag" />
                   UAE
-                </a>
-              </li>
-              <li>
-                <a href="https://corporate.decimalfactor.com/" aria-label="Corporate">
-                  <Image height="20" width="20" className={styles.countryFlag} src="/international-logo.png" alt="Corporate Logo" />
-                  Corp
                 </a>
               </li>
             </ul>

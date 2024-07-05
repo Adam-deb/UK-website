@@ -15,7 +15,7 @@ const teamMembers = [
   {
     name: "Hassan Saduddeen",
     position: "Chief Operations Officer",
-    image: "/Hassan.jpg",
+    image: "/Hassan.png",
     linkedin: "https://www.linkedin.com/in/mohammed-hassan-saduddeen-5a633949/",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },

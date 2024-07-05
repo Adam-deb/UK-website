@@ -26,7 +26,7 @@ export default function Products() {
                             <li><strong>Interest Rates:</strong> Competitive rates based on your business&apos;s creditworthiness</li>
                             <li><strong>Usage:</strong> Ideal for business expansion, purchasing inventory, or investing in new opportunities</li>
                         </ul>
-                        <button>Apply Now</button>
+                        <a href="https://portal.decimalfactor.com/request-a-quote"><button>Apply Now</button></a>
                     </div>
                     <div className={styles.productInfoImage}>
                         <Image width="500" height="300" src="/Business-loan-image.jpg" alt="Unsecured Business Loans" />
@@ -45,7 +45,7 @@ export default function Products() {
                             <li><strong>Flexibility:</strong> Repayments adapt to your business volumes, making them more manageable</li>
                             <li><strong>Usage:</strong> Ideal for businesses with fluctuating sales volumes</li>
                         </ul>
-                        <button>Apply Now</button>
+                        <a href="https://portal.decimalfactor.com/request-a-quote"><button>Apply Now</button></a>
                     </div>
                     <div className={styles.productInfoImage}>
                         <Image width="500" height="300" src="/mca-image.jpg" alt="Flexi-Funding - Merchant Cash Advance" />
@@ -63,7 +63,7 @@ export default function Products() {
                             <li><strong>Repayment Terms:</strong> Flexible repayment terms based on your invoice payment cycles</li>
                             <li><strong>Usage:</strong> Ideal for businesses with extended payment cycles and creditworthy clients</li>
                         </ul>
-                        <button>Apply Now</button>
+                        <a href="https://portal.decimalfactor.com/request-a-quote"><button>Apply Now</button></a>
                     </div>
                     <div className={styles.productInfoImage}>
                         <Image width="500" height="300" src="/invoice-finance-image.jpg" alt="Invoice Financing" />
