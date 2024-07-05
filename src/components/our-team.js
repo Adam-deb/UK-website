@@ -21,7 +21,7 @@ const teamMembers = [
   },
   {
     name: "Pallavi Inamdar",
-    position: "Service Delivery Expert",
+    position: "Director of Service Delivery",
     image: "/pallavi.jpg",
     linkedin: "https://www.linkedin.com/in/pallavi-inamdar-b9757214/",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
@@ -35,7 +35,7 @@ const teamMembers = [
   },
   {
     name: "Riya Gurjar",
-    position: "Business Development Manager",
+    position: "Director of Business Development",
     image: "/riya.jpg",
     linkedin: "https://www.linkedin.com/in/riya-gurjar-a7ab95173/",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
