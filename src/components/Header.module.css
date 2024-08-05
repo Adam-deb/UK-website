@@ -291,6 +291,9 @@
 
 /* Mobile Styles */
 @media (max-width: 970px) {
+    .header {
+        width:100%
+    }
     .logoNavContainer {
         display: flex;
         align-items: center;

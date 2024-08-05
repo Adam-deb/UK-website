@@ -66,7 +66,7 @@ export default function Home() {
         <div className={styles.heroContent}>
           <div className={styles.heroTextContent}> 
             <h1>Fast and Flexible Funding for Small Businesses</h1>
-            <p className={styles.appStepsHeadingp}>Whether you&apos;re investing in new Business opportunities, or optimizing cash flow, our specialized financial solutions are designed to accelerate your business forward.</p>
+            <p className={styles.appStepsHeadingp}>Whether you&apos;re investing in new Business opportunities, or optimising cash flow, our specialised financial solutions are designed to accelerate your business forward.</p>
             <a href="https://portal.decimalfactor.com/request-a-quote"><button>Apply Now</button></a>
           </div>
           <div className={styles.heroImage}>
@@ -127,13 +127,13 @@ export default function Home() {
           </div>
           <div className={styles.fpCard}>
             <h3>Merchant Cash Advances</h3>
-            <h4>£10,000 - £100,000</h4>
+            <h4>£10,000 - £1,000,000</h4>
             <p>Flexi-funding or merchant cash advance (MCA) is ideal for small businesses experiencing fluctuating sales volumes. Receive upfront funding in exchange for a percentage of your future credit card sales.</p>
             <Link href="/financial-products#merchant-cash-advance">Learn more</Link>
           </div>
           <div className={styles.fpCard}>
             <h3>Invoice Financing</h3>
-            <h4>£10,000 - £500,000</h4>
+            <h4>£1,000 - £100,000</h4>
             <p>Improve your cash flow by leveraging your outstanding invoices. With invoice financing, you can immediate access up to 90% of the value of your unpaid invoices.</p>
             <Link href="./financial-products#invoice-financing">Learn more</Link>
           </div>

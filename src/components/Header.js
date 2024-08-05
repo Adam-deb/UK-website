@@ -39,7 +39,15 @@ const navigationData = [
       { title: 'Contact Us', href: '/support#contact-us' },
       { title: 'FAQs', href: '/support' }
     ]
-  }
+  },
+  {
+    title: 'Apply/Login',
+    href: '#', // Add href for the main navigation item
+    subItems: [
+      { title: 'Apply', href: "https://portal.decimalfactor.com/request-a-quote" },
+      { title: 'Login', href: "https://portal.decimalfactor.com/Login" }
+    ]
+  },
 ];
 
 export default function Header() {
@@ -163,7 +171,7 @@ export default function Header() {
   );
 }
 
-function NavItem({ title, href, activeNavItem, setActiveNavItem, subItems, handleSubItemClick, isMobileView }) {
+function NavItem({ title, href, activeNavItem, setActiveNavItem, subItems, handleSubItemClick, isMobileView}) {
   const handleMouseEnter = () => {
     if (!isMobileView) {
       setActiveNavItem(title.toLowerCase());
@@ -182,6 +190,10 @@ function NavItem({ title, href, activeNavItem, setActiveNavItem, subItems, handl
     }
   };
 
+  if (!isMobileView && title === "Apply/Login") {
+    return null;
+  }
+
   return (
     <li
       className={`${activeNavItem === title.toLowerCase() ? styles.active : ''}`}
@@ -191,7 +203,9 @@ function NavItem({ title, href, activeNavItem, setActiveNavItem, subItems, handl
     >
       <div className={styles.navItemTitleContainer}>
         <Link className={styles.mainNavItem} href={href}>{title}</Link>
-        <Image height="50" width="50" className={styles.arrowIcon} src="/down-arrow.png" alt="Down Arrow" />
+        {subItems.length > 0 && (
+          <Image height="50" width="50" className={styles.arrowIcon} src="/down-arrow.png" alt="Down Arrow" />
+        )}
       </div>
       {activeNavItem === title.toLowerCase() && (
         <ul className={styles.subMenu}>

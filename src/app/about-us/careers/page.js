@@ -9,16 +9,25 @@ import styles from "./page.module.css";
 // Define available vacancies variable
 const availableVacancies = [
   {
-    title: "Software Engineer",
-    description: "We are looking for a skilled Software Engineer to join our dynamic team. You will be responsible for designing, developing, and maintaining software solutions that drive our business forward. Proficiency in JavaScript, React, and Node.js is required.",
-    link: "#",
+    title: "Funding Associate Intern",
+    description: "We are seeking a self-motivated and detail-oriented individual to join our team as a Funding Associate Intern. This role offers an excellent opportunity to gain hands-on experience in the UK’s finance sector and to contribute to our mission of providing innovative funding solutions.",
+    link: "mailto:info@decimalfactor.com?subject=Funding%20Associate%20Internship%20Application&body=Placeholder%20Message",
     responsibilities: [
-      "Develop and maintain software applications",
-      "Collaborate with cross-functional teams",
-      "Participate in code reviews and technical discussions",
-      "Troubleshoot and debug issues",
-      "Continuously improve code quality and performance"
-    ]
+      "Conduct research and analysis on funding opportunities and financial trends.",
+      "Support the Funding Managers in identifying and reaching out to potential clients.",
+      "Help manage the sales pipeline and track progress towards sales targets.",
+      "Prepare reports and presentations for internal and external use."
+    ],
+    educationalBackground: "Undergraduate (UG) or Postgraduate (PG) degree in any subject. A background in finance or related fields is preferred.",
+    workEligibility: "Must have the eligibility to work in the UK for at least 10 hours per week.",
+    skillsAndCompetencies: [
+      "Strong analytical and research skills.",
+      "Excellent written and verbal communication abilities.",  
+      "Interest in sales and client relationship management.",
+      "A proactive and self-motivated approach to work."
+    ],
+    moreDetails: "Career progression within our company is based purely on performance. Exceptional interns will have the opportunity to transition into full-time roles and advance within the organization.",
+    apply: "Please submit your CV to info@decimalfactor.com with the subject line: Funding Associate Internship Application <br><br> Join us and embark on a rewarding career path that offers growth, learning and the chance to make a meaningful impact in the finance industry. We look forward to receiving your application!"
   }
 ];
 
@@ -83,7 +92,20 @@ export default function Careers() {
                     <li key={index}>{responsibility}</li>
                   ))}
                 </ul>
-                <button href={selectedJob.link}>Apply Now</button>
+                <h3>Educational Background</h3>
+                <p>{selectedJob.educationalBackground}</p>
+                <h3>Work Eligibility</h3>
+                <p>{selectedJob.workEligibility}</p>
+                <h3>Skills and Competencies</h3>
+                <ul>
+                  {selectedJob.skillsAndCompetencies.map((skills, index) => (
+                    <li key={index}>{skills}</li>
+                  ))}
+                </ul>
+                <p>{selectedJob.moreDetails}</p>
+                <h3>How to Apply?</h3>
+                <p dangerouslySetInnerHTML={{ __html: selectedJob.apply }} />
+                <a href={selectedJob.link}><button>Apply Now</button></a>
               </>
             )}
           </div>
