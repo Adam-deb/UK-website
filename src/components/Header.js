@@ -154,13 +154,19 @@ export default function Header() {
               <li>
                 <a href="https://canada.decimalfactor.com/" aria-label="Canada">
                   <Image height="20" width="20" className={styles.countryFlag} src="/canada-flag.png" alt="Canada Flag" />
-                  CA
+                  Canada
                 </a>
               </li>
               <li>
                 <a href="https://www.decimalfactor.ae/" aria-label="UAE">
                   <Image height="20" width="20" className={styles.countryFlag} src="/UAE-flag.png" alt="UAE Flag" />
                   UAE
+                </a>
+              </li>
+              <li>
+                <a href="https://corporate.decimalfactor.com/" aria-label="Corporate">
+                  <Image height="20" width="20" className={styles.countryFlag} src="/favicon.ico" alt="Corporate Logo" />
+                  Corporate
                 </a>
               </li>
             </ul>
