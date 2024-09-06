@@ -63,7 +63,7 @@ export default function Careers() {
           </section>
         ) : (
           <section className={`${styles.section} ${styles.greyBackground} Jobs`}>
-            <h2>Current Openings</h2>
+            <h2>Current Openings:</h2>
             <div className={styles.jobListing}>
               {availableVacancies.map((job, index) => (
                 <div key={index} className={styles.jobItem}>

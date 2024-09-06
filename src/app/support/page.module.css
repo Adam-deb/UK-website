@@ -59,6 +59,17 @@
     margin-top: 10px; /* Adjust the margin as needed */
   }
 
+  @media (max-width:920px){
+    .main{
+        padding: 0 50px;
+    }
+  }
+
+  @media (max-width:510px){
+    .main{
+        padding: 0 30px;
+    }
+  }
 
   
 

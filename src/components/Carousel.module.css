@@ -4,7 +4,7 @@
   }
   
   .carouselContainer {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     position: relative;
   }
@@ -28,10 +28,11 @@
   }
   
   .testimonialItem img {
-    max-width: 200px;
-    height: auto;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    margin-right: 20px;
+    margin: auto 20px auto 0;
+    display:flex;
   }
   
   .testimonialContent {
@@ -83,4 +84,126 @@
   .next {
     right: -60px;
   }
+
+  @media (max-width: 992px) { 
+    .testimonialContent p{
+      font-size:14px
+    }
+    .testimonialContent h4{
+      font-size: 16px;
+    }
+  }
+    
+  @media (max-width: 901px) {
+    .carouselContainer{
+      max-width:600px
+    }
+  }
+  
+  @media (max-width: 704px) {
+    .carouselContainer{
+      max-width:550px
+    }
+    .testimonialItem img{
+      width: 130px;
+      height:130px;
+    }
+    .testimonialContent p{
+      font-size:12px
+    }
+    .testimonialContent h4{
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width:670px){
+    .carouselContainer{
+      max-width: 500px
+    }
+    .testimonialContent p{
+      text-align: center;
+      font-size: 14px;
+    }
+    .testimonialContent h4{
+      text-align: center;
+      font-size: 16px;
+    }
+    .testimonialItem.active{
+      flex-direction: column;
+    }
+    .testimonialItem img{
+      margin: 0 auto;
+      width: 250px;
+      height: 250px
+    }
+  }
+
+  @media (max-width: 620px) {
+    .carouselContainer{
+      max-width: 450px
+    }
+  }
+
+  @media (max-width: 570px) {
+    .carouselContainer{
+      max-width: 350px
+    }
+  }
+
+  @media (max-width: 520px) {
+    .carouselContainer{
+      max-width: 300px
+    }
+    .testimonialItem img{
+      margin: 0 auto;
+      width: 200px;
+      height: 200px
+    }
+  }
+
+  @media (max-width: 420px) {
+    .carouselContainer{
+      max-width: 250px
+    }
+
+    .testimonialContent {
+      padding: 0px;
+      margin-top:10px
+    }
+
+    .testimonialContent p{
+      text-align: center;
+      font-size: 14px;
+    }
+    .testimonialContent h4{
+      text-align: center;
+      font-size: 16px;
+    }
+
+  }
+
+  @media (max-width: 420px) {
+    .carouselContainer{
+      max-width: 200px;
+    }
+      .testimonialContent {
+        padding: 0px;
+        margin-top:10px
+      }
+  
+      .testimonialContent p{
+        text-align: center;
+        font-size: 14px;
+      }
+      .testimonialContent h4{
+        text-align: center;
+        font-size: 16px;
+      }
+    .testimonialItem img{
+      margin: 0 auto;
+      width: 180px;
+      height: 180px
+    }
+  }
+    
   

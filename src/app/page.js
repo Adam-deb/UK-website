@@ -67,6 +67,8 @@ export default function Home() {
           <div className={styles.heroTextContent}> 
             <h1>Fast and Flexible Funding for Small Businesses</h1>
             <p className={styles.appStepsHeadingp}>Whether you&apos;re investing in new Business opportunities, or optimising cash flow, our specialised financial solutions are designed to accelerate your business forward.</p>
+          </div>
+          <div className={styles.heroApplyButton}>
             <a href="https://portal.decimalfactor.com/request-a-quote"><button>Apply Now</button></a>
           </div>
           <div className={styles.heroImage}>
@@ -119,19 +121,19 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.fpContentContainer}>
-          <div className={styles.fpCard}>
+          <div className={styles.fpCard} id={styles.unsecuredBusinessLoan}>
             <h3>Unsecured Business Loans</h3>
             <h4>£5,000 - £500,000</h4>
             <p>Gain swift access to funds without the need for collateral. Our unsecured business loans offer funding from £5K to £500K, with flexible repayment terms tailored to your business needs.</p>
             <Link href="/financial-products#unsecured-business-loan">Learn more</Link>
           </div>
-          <div className={styles.fpCard}>
+          <div className={styles.fpCard} id={styles.merchantCashAdvance}>
             <h3>Merchant Cash Advances</h3>
             <h4>£10,000 - £1,000,000</h4>
             <p>Flexi-funding or merchant cash advance (MCA) is ideal for small businesses experiencing fluctuating sales volumes. Receive upfront funding in exchange for a percentage of your future credit card sales.</p>
             <Link href="/financial-products#merchant-cash-advance">Learn more</Link>
           </div>
-          <div className={styles.fpCard}>
+          <div className={styles.fpCard} id={styles.invoiceFinancing}>
             <h3>Invoice Financing</h3>
             <h4>£1,000 - £100,000</h4>
             <p>Improve your cash flow by leveraging your outstanding invoices. With invoice financing, you can immediate access up to 90% of the value of your unpaid invoices.</p>

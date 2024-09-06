@@ -53,13 +53,12 @@ export default function PrivacyPolicy() {
             <p>We will not sell, distribute or lease your personal information to third parties unless we have your permission or are contractually obliged or are required by law to do so. We may use your personal information to send you promotional information about third parties which we think you may find interesting if you tell us that you wish this to happen.</p>
             <p>You may request details of personal information which we hold about you under the Data Protection Act 1998. A small fee may be payable. If you would like a copy of the information held on you please write to:</p>
             <address>
-              The Company Secretary<br />
               DECIMAL FACTOR LIMITED,<br />
-              2ND FLOOR,<br />
-              145-157 ST JOHN STREET,<br />
-              LONDON,<br />
-              UNITED KINGDOM,<br />
-              EC1V 4PY
+              Level 39,<br />
+              One Canada Square,<br />
+              Canary Wharf,<br />
+              London E14 5AB,<br />
+              United Kingdom
             </address>
             <p>If you have any questions or would like to know more about how we handle your data, you can call our payment experts on 0800 612 6961 or you can email <a href="mailto:info@decimalfactor.com">info@decimalfactor.com</a></p>
 

@@ -35,10 +35,6 @@ export default function FAQsPage() {
 
       const contactInfo = [
         {
-            question: "By Telephone",
-            answer: "You can call us at: 0800 612 6961 between x and x"
-        },
-        {
             question: "By Email",
             answer: "You can email us at: info@decimalfactor.com"
         },

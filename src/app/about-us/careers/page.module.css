@@ -175,3 +175,17 @@
   border:none;
   cursor: pointer;
 }
+
+@media(max-width:658px){
+  .main{
+    padding:0 50px
+  }
+}
+
+
+@media(max-width:440px){
+  .section{
+    padding: 50px 0
+  }
+}
+

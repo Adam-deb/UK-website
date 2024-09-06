@@ -1,6 +1,5 @@
 /* Hero Section */
 .hero {
-  /* background: url(../images/hero-background.png) no-repeat top center; */
   width: 100%;
   background-size: cover;
   padding: 110px 0;
@@ -10,8 +9,10 @@
 }
 
 .heroContent {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1r;
+  grid-template-rows: auto auto;
+  grid-template-areas:'textContent image''applyButton image';
   justify-content: space-between;
   max-width: 1200px;
   width: 100%;
@@ -19,9 +20,9 @@
 }
 
 .heroTextContent {
-  flex: 1;
-  margin-right: 20px;
-  /* color: white; */
+  grid-area: textContent ;
+  margin: auto 20px auto 0;
+
 }
 
 .heroTextContent h1 {
@@ -31,20 +32,26 @@
 }
 
 .heroTextContent p {
-  font-size: 14px;
-  margin-bottom: 20px;
+  font-size: 20px;
   font-family: 'MontserratMedium'
 }
 
-.heroTextContent button {
+.heroApplyButton{
+  margin-top: 0;
+  grid-area: applyButton;
+  align-items: start !important;
+}
+
+.heroApplyButton button {
   background-color: #C3181E;
   border-radius: 10px;
   color: white !important;
   border: none;
-  padding: 15px 30px;
+  padding: 10px 30px;
   font-size: 18px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: 0;
 }
 
 .heroTextContent button:hover {
@@ -52,8 +59,7 @@
 }
 
 .heroImage {
-  flex: 1;
-  text-align: right;
+  grid-area: image;
 }
 
 .heroImage img {
@@ -95,9 +101,14 @@
   color: white;
 }
 
+.appStepContent h3{
+  font-size: 16px;
+}
+
 .appStepContent p {
   color: white;
   margin-top: 8px;
+  font-size: 14px;
 }
 
 .appStep1 {
@@ -154,7 +165,6 @@
   display: flex;
   justify-content: space-around;
   margin: 50px 150px;
-  max-height: 320px;
 }
 
 .fpCard {
@@ -227,7 +237,7 @@
 
 .deniedCtaContent h2 {
   font-size: 32px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .deniedCtaContent p {
@@ -252,6 +262,8 @@
   border: none;
 }
 
+
+
 /* FAQ section */
 
 
@@ -271,6 +283,80 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+@media (max-width:1080px){
+  .fpSubheading {
+    padding: 0 100px;
+  }
+  .fpContentContainer {
+    margin: 50px 100px;
+  }
+  .customerTestimonials {
+    margin: 0 100px;
+  }
+  .deniedCta {
+    padding: 50px 100px;  
+  }
+}
+
+@media (max-width:980px){
+  .fpContentContainer {
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 'unsecuredBusinessLoan merchantCashAdvance' 'invoiceFinancing invoiceFinancing';
+  }
+
+  .fpCard{
+    max-width: 300px;
+  }
+
+  #unsecuredBusinessLoan{
+    grid-area: unsecuredBusinessLoan ;
+  }
+
+  #merchantCashAdvance{
+    grid-area: merchantCashAdvance ;
+  }
+  #invoiceFinancing{
+    grid-area: invoiceFinancing;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    margin-top: 50px;
+  }
+}
+
+
+@media (max-width: 935px) {
+  .appStepContent h3{
+    font-size: 14px;
+  }
+  
+  .appStepContent p {
+    color: white;
+    margin-top: 8px;
+    font-size: 13px;
+  }
+  .appStep1 {
+    margin-right: 10px;
+  }
+  
+  .appStep2 {
+    margin: 0 5px;
+  }
+  
+  .appStep3 {
+    margin-left: 10px;
+  }
+  .appStep1 img,
+  .appStep2 img,
+  .appStep3 img {
+    width: 75px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 901px) {
   /* Hero */
   .hero {
@@ -285,18 +371,193 @@
     max-width: 350px;
     height: auto;
   }
+
+  .fpSubheading {
+    padding: 0 50px;
+  }
+  .fpContentContainer {
+    margin: 50px 50px;
+  }
+  .customerTestimonials {
+    margin: 0 50px;
+  }
+  .deniedCta {
+    padding: 50px 50px;  
+  }
+}
+
+@media (max-width: 845px) {
+  .appStep1,
+  .appStep2,
+  .appStep3 {
+    padding: 0 10px;
+  }
+
+  .fpCard{
+    max-width: 280px;
+  }
 }
 
 @media (max-width: 801px) {
   .hero {
-    padding:80px 0
+    padding:80px 0px,
   }
   .heroTextContent h1{
-    font-size: 32px;
+    font-size: 28px;
+  }
+  .heroTextContent p {
+    font-size: 16px;
   }
   .heroImage img {
     max-width: 300px;
     height: auto;
   }
+
+  .appContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 220px;
+    margin: 20px auto 0;
+  }
+
+  .appStep1,
+  .appStep2,
+  .appStep3{
+    margin: 30px 0 0 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .heroTextContent h1{
+    font-size: 24px;
+  }
+  .heroTextContent p{
+    font-size: 14px;
+  }
+  .heroImage img {
+    max-width: 260px;
+    height: auto;
+  }
+
+  .appContainer{
+    padding: 0 200px;
+  }
+}
+
+@media (max-width: 701px) {
+  .fpContentContainer {
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 'unsecuredBusinessLoan' 'merchantCashAdvance' 'invoiceFinancing';
+    margin-top: 0;
+  }
+
+  .fpCard{
+    margin-top:50px
+  }
+}
+
+@media (max-width: 657px) {
+  .heroTextContent h1{
+    font-size: 22px;
+  }
+  .heroTextContent p{
+    font-size: 12px;
+  }
+  .heroImage img {
+    max-width: 250px;
+    height: auto;
+  }
+  .appContainer{
+    padding: 0 180px;
+  }
+}
+@media (max-width: 601px) {
+  .hero{
+    padding:50px 0;
+  }
+  .heroContent {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:'textContent' 'image' 'applyButton';
+    gap:40px;
+    padding: 0 20px;
+  }
+  .heroTextContent {
+    text-align: center;
+  }
+  .heroTextContent h1{
+    font-size: 32px;
+  }
+  .heroTextContent p{
+    font-size: 14px;
+  }
+  .heroApplyButton{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .heroImage {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .heroImage img {
+    max-width: 260px;
+    height: auto;
+  }
+
+  .appContainer{
+   padding: 0 150px;
+  }
+}
+
+@media(max-width: 580px){
+  .appStepsHeading{
+    font-size: 24px;
+  }
+  .appContainer{
+    padding: 0 120px;
+   }
+  .deniedCtaContent h2{
+    font-size:28px
+  }
+.deniedCtaContent p{
+  font-size: 16px;
+  }
+}
+
+@media(max-width:510px){
+  
+  .deniedCtaContent h2{
+    font-size:24px
+  }
+  .deniedCtaContent p{
+    font-size: 14px;
+    }
+}
+
+@media(max-width: 480px){
+  .appStep1 img,
+  .appStep2 img,
+  .appStep3 img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .appContainer{
+    padding: 0 100px;
+   }
+}
+
+@media(max-width: 480px){
+  .appContainer{
+    padding: 0 20px
+  }
+}
+
+@media(max-width: 500px){
 
 }

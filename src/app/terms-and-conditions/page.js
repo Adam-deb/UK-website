@@ -16,7 +16,7 @@ export default function TermsAndConditions() {
       <h1 className={styles.termsTitle}>Terms &amp; Conditions</h1>
 
       <h2>Introduction</h2>
-      <p>This Web Site Use Agreement (&quot;Agreement&quot;) is entered into by you and Decimal Factor Limited of 2nd Floor, 145-157 St John Street, London, EC1V 4PY.</p>
+      <p>This Web Site Use Agreement (&quot;Agreement&quot;) is entered into by you and Decimal Factor Limited of Level 39, One Canada Square, Canary Wharf, London E14 5AB, United Kingdom.</p>
       <p>This Agreement sets forth the terms and conditions under which you use the Decimal Factor Limited and its products WebSite and under which Decimal Factor Limited agrees to your use of the Decimal Factor Limited Web Site. By using the Decimal Factor Limited Web Site, you agree to be bound by the terms of this Agreement.</p>
 
       <h2>Affiliated Businesses</h2>

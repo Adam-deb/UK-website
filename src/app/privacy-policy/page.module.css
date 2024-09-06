@@ -57,3 +57,16 @@
   margin-bottom: 10px; /* Adjust spacing between list items */
   line-height: 1.6;
 }
+
+@media (max-width:920px){
+  .main{
+      padding: 0 50px;
+  }
+}
+
+@media (max-width:510px){
+  .main{
+      padding: 0 30px;
+  }
+}
+
