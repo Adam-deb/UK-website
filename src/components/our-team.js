@@ -8,7 +8,7 @@ const teamMembers = [
   {
     name: "Manoj Karkhanis",
     position: "Chief Executive Officer",
-    image: "/Manoj.png",
+    image: "/Manoj.jpeg",
     linkedin: "https://www.linkedin.com/in/manoj-karkhanis-21b392/",
     description: "In 2008, at the height of the financial crisis when no high street bank was willing to help small businesses, Manoj left the position of CEO to create Decimal Factor. Today, Decimal Factor has grown into a leading and recognised Credit Brokerage Firm in the UK & USA, regulated by the Financial Conduct Authority of UK (FCA).",
   },

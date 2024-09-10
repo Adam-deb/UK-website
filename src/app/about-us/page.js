@@ -25,7 +25,7 @@ export default function AboutUs() {
           <div className={styles.journeyContent}>
             <div className={styles.founderImageContainer}>
               <Image
-                src="/Manoj.png"
+                src="/Manoj.jpeg"
                 alt="Founder Manoj Karkhanis"
                 width={300}
                 height={300}

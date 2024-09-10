@@ -23,7 +23,7 @@ export default function Home() {
     {
       text: `Invoice financing has transformed the way we manage our finances, and Decimal Factor played a pivotal role in making it happen. From the initial consultation to the funding stage, their team provided invaluable guidance and support. I'm impressed by their professionalism and commitment to client success.`,
       author: "- Logistics Business Owner",
-      image: "/testimonial-3.jpg"
+      image: "/Testimonial-3.jpg"
     }
   ];
 
